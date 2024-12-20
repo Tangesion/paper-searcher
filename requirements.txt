@@ -1,0 +1,12 @@
+beautifulsoup4==4.12.3
+datasets==2.21.0
+evaluate==0.4.2
+numpy==2.2.0
+pandas==2.2.3
+peft==0.13.2
+Requests==2.32.3
+sparkai==0.3.0
+torch==2.4.0
+tqdm==4.66.4
+transformers==4.46.1
+websocket_client==1.8.0

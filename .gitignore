@@ -3,3 +3,4 @@ wandb/
 papers/
 data2.csv
 merged_data.csv
+finetune.py
