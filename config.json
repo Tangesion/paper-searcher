@@ -1,0 +1,5 @@
+{
+    "model_path": "/home/gexingt/tgx/models/Meta-Llama-3-8B-Instruct",
+    "lora_path": "/home/gexingt/tgx/projects/datawhale/paper-searcher/llama-lora-token-classification/checkpoint-1955",
+    "paper_web_url": "https://dblp.org/db/conf/hpca/hpca2024.html"
+}
