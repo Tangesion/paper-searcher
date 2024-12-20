@@ -30,7 +30,8 @@ websocket_client==1.8.0
 基本思路是通过**星火大模型API**去标注数据，然后利用该数据对**较小**的模型**LLaMa3**进行**Lora微调**，然后使用微调后的小模型去判断哪些论文与大模型相关  
 具体可查看文件[finetune.ipynb](./finetune.ipynb), 也可参考[Lora-for-sequence-classification-with-Roberta-Llama-Mistral.md](https://github.com/huggingface/blog/blob/main/Lora-for-sequence-classification-with-Roberta-Llama-Mistral.md)  
 微调后的得分指标如下:  
-![得分指标](./image/score.png)
+![得分指标](./image/score.png)  
+
 可以看到在第5个Epoch后Acc达到最高
 ## 三、如何使用
 配置`config.json` 文件, 填入模型文件地址，lora微调后的模型文件地址，需要搜寻下载论文的网页(**当前仅支持dblp**)
@@ -46,6 +47,10 @@ websocket_client==1.8.0
 python searcher.py
 ```
 运行时截图:
-![runtime](./image/runtime.png)
-此时**searcher**会自动下载与大模型相关的论文，并将其存放在`papers`文件夹中
-![paper](./image/paper.png)
+![runtime](./image/runtime.png)  
+
+此时**searcher**会自动下载与大模型相关的论文，并将其存放在`papers`文件夹中   
+
+<p align="center">
+  <img src="./image/paper.png" alt="paper">
+</p>
