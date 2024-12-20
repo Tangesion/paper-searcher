@@ -10,6 +10,7 @@ Ubuntu 18.04.6 LTS
 python 3.10
 cuda 11.8
 pytorch 2.4.0
+V100 32GB
 ```
 依赖包
 ```
@@ -27,7 +28,7 @@ transformers==4.46.1
 websocket_client==1.8.0
 ```
 ## 二、数据准备以及模型微调
-基本思路是通过**星火大模型API**去标注数据，然后利用该数据对**较小**的模型**LLaMa3**进行**Lora微调**，然后使用微调后的小模型去判断哪些论文与大模型相关  
+基本思路是通过**星火大模型API**去标注数据，然后利用该数据对相对API模型**较小**的模型**LLaMa3 8B**进行**Lora微调**，然后使用微调后的小模型去判断哪些论文与大模型相关  
 具体可查看文件[finetune.ipynb](./finetune.ipynb), 也可参考[Lora-for-sequence-classification-with-Roberta-Llama-Mistral.md](https://github.com/huggingface/blog/blob/main/Lora-for-sequence-classification-with-Roberta-Llama-Mistral.md)  
 微调后的得分指标如下:  
 ![得分指标](./image/score.png)  
